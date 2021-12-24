@@ -1,4 +1,4 @@
-# Scrapy settings for Android project
+# Scrapy settings for Scrapy_Drones project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -7,17 +7,17 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'Android'
+BOT_NAME = 'asos'
 
-SPIDER_MODULES = ['Android.spiders']
-NEWSPIDER_MODULE = 'Android.spiders'
+SPIDER_MODULES = ['Scrapy_Drones.spiders']
+NEWSPIDER_MODULE = 'Scrapy_Drones.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'Android (+http://www.yourdomain.com)'
+USER_AGENT='Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36' 'http://www.asos.com/search/circle%20skirt?currentpricerange=10-95&q=circle%20skirt&refine=attribute_900:1573'
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = True
+ROBOTSTXT_OBEY = False
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
@@ -45,13 +45,13 @@ ROBOTSTXT_OBEY = True
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'Android.middlewares.AndroidSpiderMiddleware': 543,
+#    'Scrapy_Drones.middlewares.ScrapyDronesSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'Android.middlewares.AndroidDownloaderMiddleware': 543,
+#    'Scrapy_Drones.middlewares.ScrapyDronesDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -63,7 +63,7 @@ ROBOTSTXT_OBEY = True
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
-#    'Android.pipelines.AndroidPipeline': 300,
+#    'Scrapy_Drones.pipelines.ScrapyDronesPipeline': 300,
 #}
 
 # Enable and configure the AutoThrottle extension (disabled by default)

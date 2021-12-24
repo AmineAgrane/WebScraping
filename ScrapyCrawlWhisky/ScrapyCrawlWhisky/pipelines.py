@@ -8,6 +8,6 @@
 from itemadapter import ItemAdapter
 
 
-class AndroidPipeline:
+class ScrapycrawlwhiskyPipeline:
     def process_item(self, item, spider):
         return item
